@@ -79,7 +79,7 @@ df_raised['SLA met'] = df_raised.apply(SLA_met, axis=1)
 # Create username and password protection for th dashboard
 
 app = dash.Dash(__name__, prevent_initial_callbacks=True)
-application = app.server
+server = app.server
 
 VALID_USERNAME_PASSWORD_PAIRS = {
     'hellou': 'world'
@@ -491,4 +491,4 @@ def upadte_figure(year_selected, date_slider, KPI):
 
 
 if __name__ == '__main__':
-    application.run(debug=True, use_reloader=False)
+    app.run_server(debug=True, use_reloader=False)
