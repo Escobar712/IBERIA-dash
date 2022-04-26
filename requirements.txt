@@ -32,5 +32,5 @@ ua-parser==0.10.0
 urllib3==1.26.9
 Werkzeug==2.1.1
 zipp==3.8.0
-Gunicorn
+gunicorn==20.0.4
 
